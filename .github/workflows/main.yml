@@ -39,6 +39,7 @@ jobs:
     - name: build 
       run: |
         cd src
+        qmake - project
         qmake
         make
 
