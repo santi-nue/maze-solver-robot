@@ -1,4 +1,4 @@
-name: Build
+h6name: Build
 
 on: push
 
@@ -40,7 +40,7 @@ jobs:
       run: |
         mkdir build
         cd build
-        cmake .. --cmake-force-configure
+        cmake ..
         make
         
 
