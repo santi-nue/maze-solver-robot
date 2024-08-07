@@ -1,4 +1,4 @@
-h6name: Build
+name: Build
 
 on: push
 
