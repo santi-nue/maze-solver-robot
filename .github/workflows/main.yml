@@ -36,13 +36,13 @@ jobs:
           cmake:p
         
         
-    - name: build 
-      working-directory: ${{ runner.temp }}
+    - name: build
       run: |
         mkdir build
         cd build
         cmake ..
         ninja
+        dir /s /b
         
     - name: upload artifact
       uses: actions/upload-artifact@v4
