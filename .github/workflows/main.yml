@@ -43,7 +43,7 @@ jobs:
         cd build
         cmake ..
         ninja
-        windeployqt D:/a/maze-solver-robot/maze-solver-robot/build/maze-solver-robot.exe
+        # windeployqt D:/a/maze-solver-robot/maze-solver-robot/build/maze-solver-robot.exe
         
     - name: upload artifact
       uses: actions/upload-artifact@v4
