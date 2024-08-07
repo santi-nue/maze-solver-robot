@@ -42,12 +42,11 @@ jobs:
         cd build
         cmake ..
         ninja
-        dir /s /b
+        
         
     - name: upload artifact
       uses: actions/upload-artifact@v4
       with:
           name: result
-          path:  D:/a/_temp/maze-solver-robot/build/
-        
-    
+          path:  D:/a/maze-solver-robot/maze-solver-robot/build
+          
