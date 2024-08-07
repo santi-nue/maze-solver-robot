@@ -38,9 +38,10 @@ jobs:
         
     - name: build 
       run: |
-        cd src
-        qmake -project
-        qmake
+        mkdir build
+        cd build
+        cmake .. --target clean
         make
+        
 
     
