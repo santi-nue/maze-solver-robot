@@ -34,9 +34,7 @@ jobs:
           toolchain:p
           qt5-base:p
           cmake:p
-          
-
-    maze-solver-robot
+        
         
     - name: build 
       run: |
