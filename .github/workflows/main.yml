@@ -37,6 +37,7 @@ jobs:
         
         
     - name: build 
+      working-directory: ${{ runner.temp }}
       run: |
         mkdir build
         cd build
