@@ -40,7 +40,7 @@ jobs:
       run: |
         mkdir build
         cd build
-        cmake .. --target clean
+        cmake .. --cmake-force-configure
         make
         
 
