@@ -44,7 +44,7 @@ jobs:
         cmake ..
         ninja
         # windeployqt D:/a/maze-solver-robot/maze-solver-robot/build/maze-solver-robot.exe
-        cd D:/a/maze-solver-robot/maze-solver-robot/msr/src
+        cd D:/a/maze-solver-robot/maze-solver-robot/src
         qmake
         make
 
