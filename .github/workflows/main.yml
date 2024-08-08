@@ -48,6 +48,7 @@ jobs:
       working-directory: ${{ runner.temp }}
       run: |
         git clone https://github.com/mackorone/mms.git
+        cd mms
         cd src
         qmake -o Makefile mms.pro
         make
