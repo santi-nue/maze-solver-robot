@@ -43,16 +43,20 @@ jobs:
         cd build
         cmake ..
         ninja
-        # windeployqt D:/a/maze-solver-robot/maze-solver-robot/build/maze-solver-robot.exe
-        cd D:/a/maze-solver-robot/maze-solver-robot/src
-        qmake
+      
+    - name: Clone mms and build 
+      working-directory: ${{ runner.temp }}
+      run: |
+        git clone https://github.com/mackorone/mms.git
+        cd src
+        qmake -o Makefile mms.pro
         make
-
-
+        
+    
         
     - name: upload artifact
       uses: actions/upload-artifact@v4
       with:
           name: result
-          path:  D:/a/maze-solver-robot/maze-solver-robot/build
+          path:  D:/a/maze-solver-robot/tmp/maze-solver-robot/build
           
